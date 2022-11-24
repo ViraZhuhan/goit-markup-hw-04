@@ -13,6 +13,7 @@
     --footer-contact-color: rgba(255, 255, 255, 0.6);
     --header-line-color: #ECECEC;
     --icons-color: #AFB1B8;
+    --border-color: #EEEEEE;
 }
 
 *,
@@ -363,7 +364,8 @@ body {
 
 }
 
-.team-soc-link:hover {
+.team-soc-link:hover,
+.team-soc-link:focus {
     background-color: var(--accent-text-color);
     fill: var(--primary-white-color);
 }
@@ -394,7 +396,8 @@ body {
     margin-right: 30px;
 }
 
-.clients-items:hover {
+.clients-items:hover,
+.clients-items:focus {
     fill: var(--accent-text-color);
     border: 1px solid var(--accent-text-color);
 }
@@ -483,7 +486,8 @@ footer .join {
 
 }
 
-.footer-soc-link:hover {
+.footer-soc-link:hover,
+.footer-soc-link:focus {
     background-color: var(--accent-text-color);
     fill: var(--primary-white-color);
 }
@@ -546,11 +550,19 @@ footer .join {
     width: 370px;
 }
 
+.preview-wrap:hover,
+.preview-wrap:focus {
+    border: 1px solid var(--border-color);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .title-text-wrap {
     padding: 20px 24px;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
 }
 
 .preview-title {
