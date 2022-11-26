@@ -72,15 +72,9 @@ body {
     text-decoration: none;
 }
 
-.link:hover,
-.link:focus {
-    color: var(--accent-text-color);
-}
-
 .list {
     list-style: none;
     padding: 0;
-
 }
 
 .visual-hidden {
@@ -124,6 +118,11 @@ body {
     color: var(--primary-link-color);
 }
 
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-text-color);
+}
+
 .logo {
     color: var(--primary-logo-color);
     font-family: Raleway, sans-serif;
@@ -150,6 +149,10 @@ body {
 .contacts-list {
     display: flex;
     margin-left: 318px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .contacts-list>li:not(:last-child) {
@@ -162,16 +165,26 @@ body {
     justify-content: center;
     align-items: center;
 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
 }
 
+.contacts-link:hover,
+.contacts-link:focus {
+    color: var(--accent-text-color);
+}
 .mail-icons {
-    width: 100%;
-    height: 100%;
+    width: 16px;
+    height: 12px;
     margin-right: 10px;
     fill: currentColor;
 }
 
 .tel-icons {
+    width: 10px;
+    height: 16px;
     margin-right: 10px;
     fill: currentColor;
 }
@@ -235,10 +248,15 @@ body {
 
 .benefits-list {
     display: flex;
+ 
 }
 
 .benefits-icons-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
     width: 270px;
+    height: 120px;
 
     background-color: var(--second-bg-color);
     border-radius: 4px;
@@ -246,8 +264,8 @@ body {
 }
 
 .benefits-icons {
-    display: block;
-    margin: 0 auto;
+   width: 70px;
+   height: 70px;
 }
 
 .benefits-list>li:not(:last-child) {
@@ -361,7 +379,11 @@ body {
     align-items: center;
     border-radius: 50%;
     fill: var(--icons-color);
+}
 
+.team-soc-icons {
+    width: 20px;
+    height: 20px;
 }
 
 .team-soc-link:hover,
@@ -370,25 +392,19 @@ body {
     fill: var(--primary-white-color);
 }
 
-
 .clients-list {
-    display: flex;
-    fill: var(--icons-color);
+   display: flex;
 }
 
-.clients-items {
+.clients-link {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    width: 170px;
-    height: 92px;
-
     padding: 16px 32px;
-
-
     border: 1px solid var(--icons-color);
     border-radius: 4px;
+    fill: var(--icons-color);
 
 }
 
@@ -396,16 +412,27 @@ body {
     margin-right: 30px;
 }
 
-.clients-items:hover,
-.clients-items:focus {
+.clients-link:hover,
+.clients-link:focus {
     fill: var(--accent-text-color);
     border: 1px solid var(--accent-text-color);
 }
+
+ .clients-icons {
+    
+    height: 60px;
+ }    
 
 /*--------- Футер---------*/
 footer {
     background: var(--primary-bg-color);
     padding: 60px 0;
+}
+
+footer>.container {
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
 }
 
 footer .logo {
@@ -439,11 +466,10 @@ footer .contacts {
     color: var(--footer-contact-color);
 }
 
-.footer-items {
-    display: flex;
-    gap: 70px;
+footer .contacts:hover,
+footer .contacts:focus {
+    color: var(--accent-text-color);
 }
-
 
 footer .join {
     display: inline-block;
@@ -460,8 +486,6 @@ footer .join {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
-
 }
 
 .footer-soc-items {
@@ -491,6 +515,7 @@ footer .join {
     background-color: var(--accent-text-color);
     fill: var(--primary-white-color);
 }
+
 
 /*--------- стилі для portfolio.html--------- */
 /*--------- Приклади--------- */
@@ -550,12 +575,13 @@ footer .join {
     width: 370px;
 }
 
-.preview-wrap:hover,
-.preview-wrap:focus {
-    border: 1px solid var(--border-color);
+.preview-link {display: block;}
+
+.preview-link:hover,
+.preview-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
+     0px 4px 4px rgba(0, 0, 0, 0.06), 
+     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .title-text-wrap {
